@@ -1,11 +1,9 @@
 # 構築
-参考：http://qiita.com/kshigeru/items/ea174d6bcacc474f2a51
 ```
-docker run -d --name notebook -p 8888:8888 jupyter/datascience-notebook
-docker run -d --name notebook-ja -p 8888:8888 notebook-ja
-docker logs notebook
+docker build . -t jupyter-jp
+docker run -d --name jupyter-jp -p 8888:8888 jupyter-jp
+docker logs Jupyter-jp
 ```
-ex) http://localhost:8888/?token=a257283a9c138c1ca829e2654bbcd303afca26b819dcf2c1
 Jupyter サーバーは単一ユーザーでの利用を想定しているので、パスワードは一種類のみの設定
 複数人で利用するには JupyterHub 
 
@@ -176,6 +174,7 @@ bplt.show(p)
 ```
 
 # bank-marketing
+new > R
 ```
 z <- data.frame(Titanic)
 titanic.data <- data.frame(
