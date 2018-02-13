@@ -1,3 +1,9 @@
+# jupyter/datascience-notebook > NG > enxajt/rstudio(rocker/rstudio)
+docker run -it --rm -p 8888:8888 jupyter/datascience-notebook
+URL on stdout
+New > R
+Ctrl Enter
+
 # 構築
 ```
 docker build . -t jupyter-jp
