@@ -179,8 +179,7 @@ p.segment(df.index, df.High, df.index, df.Low, color='black')
 bplt.show(p)
 ```
 
-# bank-marketing
-new > R
+# titanic
 ```
 z <- data.frame(Titanic)
 titanic.data <- data.frame(
@@ -204,6 +203,7 @@ titanic.rp <-rpart(Survived~., data=titanic.data)
 plot(as.party(titanic.rp), tp_args=T)
 ```
 
+# bank-marketing
 ```
 t<-proc.time()
 
